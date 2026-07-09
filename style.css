@@ -937,3 +937,13 @@ body.modal-open{overflow:hidden}
     width:320px !important;
   }
 }
+@media screen and (max-width:768px){
+  .hero-copy h1{
+    font-size:34px !important;
+    line-height:1.08 !important;
+    max-width:320px !important;
+    width:100% !important;
+    margin:0 auto !important;
+    text-align:center !important;
+  }
+}
