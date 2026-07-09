@@ -558,81 +558,115 @@ body.modal-open{overflow:hidden}
   .modal-thumb{flex-basis:82px!important;height:58px!important;border-radius:13px!important}
   .modal-body ul{columns:1}
 }
-/* MOBILE FIX */
+/* CLEAN MOBILE VERSION */
 
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
 
+  *{
+    box-sizing:border-box;
+  }
+
+  html,
   body{
+    width:100%;
+    max-width:100%;
     overflow-x:hidden;
+    scroll-behavior:auto;
   }
 
   .container{
     width:100%;
-    padding-left:18px;
-    padding-right:18px;
+    max-width:100%;
+    padding-left:20px;
+    padding-right:20px;
   }
 
-  .nav{
+  .site-header,
+  .header{
     width:calc(100% - 24px);
     left:12px;
     right:12px;
-    padding:12px 16px;
+    top:18px;
+    border-radius:24px;
   }
 
-  .nav-menu{
+  .nav,
+  .menu{
     display:none;
   }
 
-  .nav-logo img{
-    max-width:64px;
+  .hero.section-light{
+    min-height:100vh;
+    padding:132px 20px 70px;
+    overflow:hidden;
   }
 
-  .hero{
-    min-height:auto;
-    padding:130px 18px 70px;
-    text-align:center;
-  }
-
-  .hero .container,
-  .hero-inner{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-  }
-
-  .hero h1{
-    font-size:clamp(42px, 13vw, 68px);
-    line-height:.95;
+  .hero-center{
+    width:100%;
     max-width:100%;
+    padding:0;
+    margin:0 auto;
+  }
+
+  .hero-copy{
+    width:100%;
+    max-width:100%;
+    margin:0 auto;
     text-align:center;
-    word-break:normal;
   }
 
-  .hero p{
-    font-size:17px;
-    line-height:1.55;
+  .eyebrow{
+    font-size:11px;
+    line-height:1.7;
+    letter-spacing:5px;
+    max-width:300px;
+    margin:0 auto 28px;
+    text-align:center;
+    white-space:normal;
+  }
+
+  .hero-copy h1{
+    font-size:28px;
+    line-height:1.18;
+    letter-spacing:0;
     max-width:340px;
-    margin-left:auto;
-    margin-right:auto;
+    margin:0 auto;
+    text-align:center;
+    white-space:normal;
+    word-break:normal;
+    overflow-wrap:normal;
+    hyphens:none;
   }
 
-  .hero-image,
-  .hero-visual,
-  .hero-card{
-    display:none !important;
+  .hero-text{
+    font-size:15px;
+    line-height:1.55;
+    max-width:320px;
+    margin:26px auto 0;
+    text-align:center;
   }
 
-  .section-heading h2{
-    font-size:clamp(34px, 11vw, 54px);
-    line-height:1;
+  .text-link{
+    display:inline-block;
+    margin-top:34px;
   }
 
-  .about-grid,
-  .direction-grid,
+  .blueprint-layer{
+    animation:none;
+    opacity:.28;
+    background-attachment:scroll;
+  }
+
+  .orb{
+    opacity:.35;
+    filter:blur(22px);
+  }
+
+  .about-info,
   .why-grid,
+  .direction-grid,
   .contact-grid{
-    grid-template-columns:1fr !important;
+    grid-template-columns:1fr;
   }
 
   .project-grid{
@@ -645,305 +679,12 @@ body.modal-open{overflow:hidden}
 
   .project-card{
     min-width:82%;
-    height:420px;
+    height:400px;
     scroll-snap-align:center;
   }
 
   .project-card img{
-    min-height:420px;
+    min-height:400px;
   }
 
-  .modal-content{
-    width:calc(100% - 18px) !important;
-    max-height:92vh !important;
-    padding:12px !important;
-    border-radius:24px !important;
-  }
-
-  .modal-img{
-    max-height:52vh !important;
-  }
-
-  .modal-body{
-    padding:22px 10px 26px !important;
-  }
-
-  .modal-body h3{
-    font-size:32px;
-    line-height:1.05;
-  }
-
-  .modal-thumbs{
-    gap:8px;
-    overflow-x:auto;
-    justify-content:flex-start;
-  }
-
-  .modal-thumb{
-    width:72px !important;
-    height:52px !important;
-    flex:0 0 auto;
-  }
-
-  .gallery-nav{
-    width:42px !important;
-    height:42px !important;
-    font-size:30px !important;
-  }
-
-  .gallery-prev{
-    left:10px !important;
-  }
-
-  .gallery-next{
-    right:10px !important;
-  }
-
-  .contacts{
-    padding-bottom:60px;
-  }
-}
-/* FIX MOBILE HERO */
-
-@media (max-width: 768px){
-
-  html, body{
-    width:100%;
-    max-width:100%;
-    overflow-x:hidden !important;
-  }
-
-  .hero{
-    min-height:auto !important;
-    padding:130px 18px 70px !important;
-    overflow:hidden !important;
-  }
-
-  .hero .container{
-    width:100% !important;
-    max-width:100% !important;
-    padding:0 18px !important;
-    box-sizing:border-box !important;
-  }
-
-  .hero-eyebrow{
-    font-size:14px !important;
-    letter-spacing:8px !important;
-    line-height:1.6 !important;
-    text-align:center !important;
-    max-width:100% !important;
-    overflow-wrap:break-word !important;
-  }
-
-  .hero h1{
-    font-size:52px !important;
-    line-height:.95 !important;
-    max-width:100% !important;
-    width:100% !important;
-    text-align:center !important;
-    word-break:normal !important;
-    overflow-wrap:break-word !important;
-  }
-
-  .hero p{
-    font-size:18px !important;
-    line-height:1.55 !important;
-    max-width:320px !important;
-    margin:26px auto 0 !important;
-    text-align:center !important;
-  }
-
-  .hero a,
-  .hero .btn,
-  .hero .link{
-    margin-left:auto !important;
-    margin-right:auto !important;
-  }
-}
-/* MOBILE HERO REAL FIX */
-
-@media screen and (max-width: 768px){
-
-  html,
-  body{
-    width:100% !important;
-    max-width:100% !important;
-    overflow-x:hidden !important;
-  }
-
-  .hero.section-light{
-    min-height:auto !important;
-    padding:130px 18px 80px !important;
-    overflow:hidden !important;
-  }
-
-  .hero-center{
-    width:100% !important;
-    max-width:100% !important;
-    padding:0 !important;
-    margin:0 auto !important;
-  }
-
-  .hero-copy{
-    width:100% !important;
-    max-width:100% !important;
-    text-align:center !important;
-    margin:0 auto !important;
-  }
-
-  .hero-copy .eyebrow{
-    font-size:12px !important;
-    line-height:1.6 !important;
-    letter-spacing:5px !important;
-    max-width:320px !important;
-    margin:0 auto 28px !important;
-    text-align:center !important;
-    white-space:normal !important;
-  }
-
-  .hero-copy h1{
-    font-size:42px !important;
-    line-height:1.05 !important;
-    letter-spacing:-1.5px !important;
-    max-width:340px !important;
-    width:100% !important;
-    margin:0 auto !important;
-    text-align:center !important;
-    white-space:normal !important;
-    word-break:normal !important;
-    overflow-wrap:normal !important;
-  }
-
-  .hero-copy .hero-text{
-    font-size:16px !important;
-    line-height:1.55 !important;
-    max-width:330px !important;
-    margin:28px auto 0 !important;
-    text-align:center !important;
-  }
-
-  .hero-copy .text-link{
-    display:inline-block !important;
-    margin-top:34px !important;
-  }
-}
-/* FINAL MOBILE FIX */
-
-@media screen and (max-width: 768px){
-
-  html,
-  body{
-    overflow-x:hidden !important;
-    scroll-behavior:auto !important;
-  }
-
-  .hero.section-light{
-    min-height:100vh !important;
-    height:auto !important;
-    padding:120px 18px 72px !important;
-    overflow:hidden !important;
-  }
-
-  .hero-center,
-  .hero-copy{
-    width:100% !important;
-    max-width:100% !important;
-    text-align:center !important;
-  }
-
-.hero-copy h1{
-    font-size:28px !important;
-    line-height:1.16 !important;
-    letter-spacing:-0.2px !important;
-    max-width:250px !important;
-    margin:0 auto !important;
-    text-align:center !important;
-    white-space:normal !important;
-    word-break:normal !important;
-    overflow-wrap:break-word !important;
-}
-
-  .hero-copy .eyebrow{
-    font-size:11px !important;
-    letter-spacing:5px !important;
-    line-height:1.7 !important;
-    max-width:280px !important;
-    margin:0 auto 26px !important;
-  }
-
-  .hero-copy .hero-text{
-    font-size:15px !important;
-    line-height:1.55 !important;
-    max-width:300px !important;
-    margin:24px auto 0 !important;
-  }
-
-  .hero-copy .text-link{
-    margin-top:34px !important;
-  }
-
-  .orb{
-    opacity:.45 !important;
-    filter:blur(18px) !important;
-    transform:none !important;
-  }
-
-  .blueprint-layer{
-    animation:none !important;
-    opacity:.35 !important;
-    background-attachment:scroll !important;
-  }
-
-  .section-light{
-    background-attachment:scroll !important;
-  }
-}
-/* SUPER FINAL MOBILE HERO FIX */
-
-@media screen and (max-width: 768px){
-
-  .hero-copy h1{
-    font-size:26px !important;
-    line-height:1.18 !important;
-    letter-spacing:0 !important;
-    max-width:230px !important;
-    width:230px !important;
-    margin-left:auto !important;
-    margin-right:auto !important;
-    text-align:center !important;
-    white-space:normal !important;
-    word-break:break-word !important;
-    overflow-wrap:anywhere !important;
-  }
-
-}
-.mobile-title{
-  display:none;
-}
-
-@media screen and (max-width:768px){
-  .desktop-title{
-    display:none !important;
-  }
-
-  .mobile-title{
-    display:block !important;
-  }
-
-  .hero-copy h1{
-    font-size:36px !important;
-    line-height:1.05 !important;
-    max-width:320px !important;
-    width:320px !important;
-  }
-}
-@media screen and (max-width:768px){
-  .hero-copy h1{
-    font-size:34px !important;
-    line-height:1.08 !important;
-    max-width:320px !important;
-    width:100% !important;
-    margin:0 auto !important;
-    text-align:center !important;
-  }
 }
