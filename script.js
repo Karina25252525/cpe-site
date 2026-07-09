@@ -36,8 +36,19 @@ const projects = {
 };
 
 const burger = document.querySelector('.burger');
-burger?.addEventListener('click', () => document.body.classList.toggle('menu-open'));
-document.querySelectorAll('.nav a').forEach(a => a.addEventListener('click', () => document.body.classList.remove('menu-open')));
+const nav = document.querySelector('.nav');
+
+if (burger && nav) {
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('is-open');
+  });
+
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('is-open');
+    });
+  });
+}
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
