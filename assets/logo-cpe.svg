@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 266 125" role="img" aria-label="CPE">
+  <rect x="6" y="8" width="254" height="109" rx="18" fill="none" stroke="#244a9b" stroke-width="12"/>
+  <line x1="91" y1="8" x2="91" y2="117" stroke="#244a9b" stroke-width="10"/>
+  <line x1="177" y1="8" x2="177" y2="117" stroke="#244a9b" stroke-width="10"/>
+  <rect x="183" y="14" width="70" height="97" rx="2" fill="#0bb6dc"/>
+  <text x="46" y="83" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="900" fill="#244a9b">C</text>
+  <text x="133" y="83" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="900" fill="#244a9b">P</text>
+  <text x="218" y="83" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="900" fill="#244a9b">E</text>
+</svg>
