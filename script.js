@@ -126,4 +126,48 @@ if (burger && nav) {
       burger.classList.remove('is-active');
     };
   });
+  /* Кнопка "Наверх" */
+
+.scroll-top{
+    position:fixed;
+    right:28px;
+    bottom:28px;
+    width:58px;
+    height:58px;
+    border:none;
+    border-radius:50%;
+    background:linear-gradient(135deg,#0d63c9,#36b8ff);
+    color:#fff;
+    font-size:26px;
+    cursor:pointer;
+    box-shadow:0 12px 30px rgba(9,95,199,.28);
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(20px);
+    transition:.3s;
+    z-index:999;
+}
+
+.scroll-top:hover{
+    transform:translateY(-4px);
+    box-shadow:0 18px 38px rgba(9,95,199,.35);
+}
+
+.scroll-top.show{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+@media(max-width:768px){
+
+.scroll-top{
+    width:52px;
+    height:52px;
+    right:18px;
+    bottom:18px;
+    font-size:22px;
+}
+
+}
 }
