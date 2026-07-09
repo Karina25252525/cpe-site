@@ -581,19 +581,26 @@ body.modal-open{overflow:hidden}
     padding-right:20px;
   }
 
-  .site-header,
-  .header{
-    width:calc(100% - 24px);
-    left:12px;
-    right:12px;
-    top:18px;
-    border-radius:24px;
-  }
+.site-header{
+  width:calc(100% - 24px);
+  left:12px;
+  right:auto;
+  top:18px;
+  position:fixed;
+  border-radius:24px;
+  padding:14px 18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
 
-  .nav,
-  .menu{
-    display:none;
-  }
+ .nav{
+  display:none;
+}
+
+.burger{
+  display:flex;
+}
 
   .hero.section-light{
     min-height:100vh;
@@ -626,17 +633,16 @@ body.modal-open{overflow:hidden}
   }
 
   .hero-copy h1{
-    font-size:28px;
-    line-height:1.18;
-    letter-spacing:0;
-    max-width:340px;
-    margin:0 auto;
-    text-align:center;
-    white-space:normal;
-    word-break:normal;
-    overflow-wrap:normal;
-    hyphens:none;
-  }
+  font-size:30px;
+  line-height:1.12;
+  max-width:300px;
+  margin:0 auto;
+  text-align:center;
+  white-space:normal;
+  word-break:normal;
+  overflow-wrap:normal;
+  hyphens:none;
+}
 
   .hero-text{
     font-size:15px;
