@@ -783,3 +783,28 @@ body.modal-open{overflow:hidden}
     text-align:center !important;
   }
 }
+@media screen and (max-width:768px){
+
+  .nav.is-open{
+    display:flex !important;
+    position:fixed !important;
+    top:110px !important;
+    left:12px !important;
+    right:12px !important;
+    width:calc(100% - 24px) !important;
+    flex-direction:column !important;
+    gap:18px !important;
+    padding:24px !important;
+    border-radius:24px !important;
+    background:rgba(255,255,255,.92) !important;
+    backdrop-filter:blur(18px) !important;
+    box-shadow:0 18px 50px rgba(8,42,76,.16) !important;
+    z-index:60 !important;
+  }
+
+  .nav.is-open a{
+    font-size:18px !important;
+    color:#062653 !important;
+  }
+
+}
