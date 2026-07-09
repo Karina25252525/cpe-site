@@ -732,11 +732,11 @@ body.modal-open{overflow:hidden}
     margin-left:auto !important;
   }
 
-  .hero.section-light{
-    padding:150px 18px 70px !important;
-    min-height:auto !important;
-    overflow:hidden !important;
-  }
+.hero.section-light{
+    padding:120px 18px 60px !important;
+    min-height:calc(100svh - 20px) !important;
+    overflow:visible !important;
+}
 
   .hero-center{
     width:100% !important;
