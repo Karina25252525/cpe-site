@@ -111,8 +111,7 @@ modalImg?.addEventListener('touchend', event => {
   const diff = event.changedTouches[0].clientX - touchStartX;
   if (Math.abs(diff) > 45) diff < 0 ? nextPhoto() : prevPhoto();
 }, { passive: true });
-document.addEventListener('DOMContentLoaded', function () {
-  const burger = document.querySelector('.burger');
+const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav');
 
 if (burger && nav) {
@@ -128,11 +127,3 @@ if (burger && nav) {
     };
   });
 }
-
-  nav.querySelectorAll('a').forEach(function (link) {
-    link.addEventListener('click', function () {
-      nav.classList.remove('is-open');
-      burger.classList.remove('is-active');
-    });
-  });
-});
