@@ -898,3 +898,22 @@ body.modal-open{overflow:hidden}
     background-attachment:scroll !important;
   }
 }
+/* SUPER FINAL MOBILE HERO FIX */
+
+@media screen and (max-width: 768px){
+
+  .hero-copy h1{
+    font-size:26px !important;
+    line-height:1.18 !important;
+    letter-spacing:0 !important;
+    max-width:230px !important;
+    width:230px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    text-align:center !important;
+    white-space:normal !important;
+    word-break:break-word !important;
+    overflow-wrap:anywhere !important;
+  }
+
+}
