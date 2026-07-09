@@ -827,3 +827,73 @@ body.modal-open{overflow:hidden}
     margin-top:34px !important;
   }
 }
+/* FINAL MOBILE FIX */
+
+@media screen and (max-width: 768px){
+
+  html,
+  body{
+    overflow-x:hidden !important;
+    scroll-behavior:auto !important;
+  }
+
+  .hero.section-light{
+    min-height:100vh !important;
+    height:auto !important;
+    padding:120px 18px 72px !important;
+    overflow:hidden !important;
+  }
+
+  .hero-center,
+  .hero-copy{
+    width:100% !important;
+    max-width:100% !important;
+    text-align:center !important;
+  }
+
+  .hero-copy h1{
+    font-size:38px !important;
+    line-height:1.08 !important;
+    letter-spacing:-1px !important;
+    max-width:300px !important;
+    margin:0 auto !important;
+    white-space:normal !important;
+    word-break:normal !important;
+    overflow-wrap:break-word !important;
+  }
+
+  .hero-copy .eyebrow{
+    font-size:11px !important;
+    letter-spacing:5px !important;
+    line-height:1.7 !important;
+    max-width:280px !important;
+    margin:0 auto 26px !important;
+  }
+
+  .hero-copy .hero-text{
+    font-size:15px !important;
+    line-height:1.55 !important;
+    max-width:300px !important;
+    margin:24px auto 0 !important;
+  }
+
+  .hero-copy .text-link{
+    margin-top:34px !important;
+  }
+
+  .orb{
+    opacity:.45 !important;
+    filter:blur(18px) !important;
+    transform:none !important;
+  }
+
+  .blueprint-layer{
+    animation:none !important;
+    opacity:.35 !important;
+    background-attachment:scroll !important;
+  }
+
+  .section-light{
+    background-attachment:scroll !important;
+  }
+}
