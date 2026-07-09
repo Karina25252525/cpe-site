@@ -898,24 +898,26 @@ body.modal-open{overflow:hidden}
 /* Scroll to top button */
 
 .scroll-top{
-  position:fixed;
-  right:24px;
-  bottom:24px;
-  width:54px;
-  height:54px;
-  border:0;
-  border-radius:50%;
-  background:linear-gradient(135deg,#0b3a82,#28b8ff);
-  box-shadow:0 16px 38px rgba(8,42,76,.24);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  cursor:pointer;
-  z-index:9999;
-  opacity:0;
-  visibility:hidden;
-  transform:translateY(16px);
-  transition:opacity .25s ease, visibility .25s ease, transform .25s ease;
+    position:fixed;
+    right:24px;
+    bottom:24px;
+    width:54px;
+    height:54px;
+    border:0;
+    border-radius:50%;
+    background:linear-gradient(135deg,#0b3a82,#28b8ff);
+    box-shadow:0 16px 38px rgba(8,42,76,.24);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    z-index:9999;
+
+    opacity:1;
+    visibility:visible;
+    transform:none;
+
+    transition:opacity .25s ease, visibility .25s ease, transform .25s ease;
 }
 
 .scroll-top svg{
