@@ -484,12 +484,15 @@ body.modal-open{overflow:hidden}
   border:1px solid rgba(255,255,255,.9)!important;
 }
 .modal-img{
-  width:100%!important;
-  height:100%!important;
-  object-fit:contain!important;
-  background:transparent!important;
-  display:block!important;
-  filter:contrast(1.04) saturate(1.04)!important;
+    display:block;
+    width:100%;
+    height:auto !important;
+    max-height:72vh;
+    object-fit:contain !important;
+    object-position:center;
+    background:#eef6ff;
+    image-rendering:auto;
+    filter:none;
 }
 .gallery-nav{
   top:50%!important;
