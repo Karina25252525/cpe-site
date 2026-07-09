@@ -808,3 +808,37 @@ body.modal-open{overflow:hidden}
   }
 
 }
+@media screen and (max-width:768px){
+
+  .burger{
+    display:flex !important;
+    position:relative !important;
+    z-index:999 !important;
+    pointer-events:auto !important;
+    cursor:pointer !important;
+    width:46px !important;
+    height:46px !important;
+    align-items:center !important;
+    justify-content:center !important;
+    background:transparent !important;
+    border:0 !important;
+  }
+
+  .burger span{
+    display:block !important;
+    width:28px !important;
+    height:2px !important;
+    background:#062653 !important;
+    margin:4px 0 !important;
+    pointer-events:none !important;
+  }
+
+  .site-header{
+    z-index:998 !important;
+  }
+
+  .nav.is-open{
+    display:flex !important;
+    z-index:997 !important;
+  }
+}
