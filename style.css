@@ -917,3 +917,23 @@ body.modal-open{overflow:hidden}
   }
 
 }
+.mobile-title{
+  display:none;
+}
+
+@media screen and (max-width:768px){
+  .desktop-title{
+    display:none !important;
+  }
+
+  .mobile-title{
+    display:block !important;
+  }
+
+  .hero-copy h1{
+    font-size:36px !important;
+    line-height:1.05 !important;
+    max-width:320px !important;
+    width:320px !important;
+  }
+}
