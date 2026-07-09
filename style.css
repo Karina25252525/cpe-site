@@ -851,16 +851,17 @@ body.modal-open{overflow:hidden}
     text-align:center !important;
   }
 
-  .hero-copy h1{
-    font-size:38px !important;
-    line-height:1.08 !important;
-    letter-spacing:-1px !important;
-    max-width:300px !important;
+.hero-copy h1{
+    font-size:34px !important;
+    line-height:1.12 !important;
+    letter-spacing:-0.5px !important;
+    max-width:280px !important;
     margin:0 auto !important;
+    text-align:center !important;
     white-space:normal !important;
-    word-break:normal !important;
+    word-break:keep-all !important;
     overflow-wrap:break-word !important;
-  }
+}
 
   .hero-copy .eyebrow{
     font-size:11px !important;
