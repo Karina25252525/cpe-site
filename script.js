@@ -146,3 +146,21 @@ if (scrollTopBtn) {
     });
   });
 }
+const scrollTopButton = document.querySelector('.scroll-top');
+
+if (scrollTopButton) {
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 500) {
+      scrollTopButton.classList.add('is-visible');
+    } else {
+      scrollTopButton.classList.remove('is-visible');
+    }
+  });
+
+  scrollTopButton.addEventListener('click', function () {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
