@@ -113,14 +113,21 @@ modalImg?.addEventListener('touchend', event => {
 }, { passive: true });
 document.addEventListener('DOMContentLoaded', function () {
   const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.nav');
+const nav = document.querySelector('.nav');
 
-  if (!burger || !nav) return;
-
-  burger.addEventListener('click', function () {
+if (burger && nav) {
+  burger.onclick = function () {
     nav.classList.toggle('is-open');
     burger.classList.toggle('is-active');
+  };
+
+  nav.querySelectorAll('a').forEach(function (link) {
+    link.onclick = function () {
+      nav.classList.remove('is-open');
+      burger.classList.remove('is-active');
+    };
   });
+}
 
   nav.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', function () {
