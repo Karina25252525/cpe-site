@@ -473,15 +473,14 @@ body.modal-open{overflow:hidden}
   -webkit-backdrop-filter:blur(24px) saturate(1.12)!important;
 }
 .modal-gallery{
-  position:relative!important;
-  height:min(62vh,620px)!important;
-  min-height:420px!important;
-  display:grid!important;
-  place-items:center!important;
-  overflow:hidden!important;
-  border-radius:26px!important;
-  background:linear-gradient(135deg,rgba(255,255,255,.68),rgba(229,246,255,.74))!important;
-  border:1px solid rgba(255,255,255,.9)!important;
+    position:relative!important;
+    display:grid!important;
+    place-items:center!important;
+    overflow:visible!important;
+    border-radius:26px!important;
+    background:linear-gradient(135deg,rgba(255,255,255,.68),rgba(229,246,255,.74))!important;
+    border:1px solid rgba(255,255,255,.9)!important;
+    padding:20px!important;
 }
 .modal-img{
     display:block;
