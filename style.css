@@ -949,3 +949,39 @@ body.modal-open{overflow:hidden}
     height:22px;
   }
 }
+/* Smooth mobile scroll fix */
+
+@media screen and (max-width:768px){
+
+  .hero.section-light{
+    min-height:auto !important;
+    padding-bottom:90px !important;
+    overflow:visible !important;
+  }
+
+  .blueprint-layer,
+  .blueprint-layer::before,
+  .blueprint-layer::after{
+    animation:none !important;
+    transform:none !important;
+    background-attachment:scroll !important;
+    will-change:auto !important;
+  }
+
+  .orb,
+  .orb-one,
+  .orb-two{
+    animation:none !important;
+    transform:none !important;
+    will-change:auto !important;
+    filter:blur(14px) !important;
+    opacity:.28 !important;
+  }
+
+  .reveal{
+    transition:none !important;
+    transform:none !important;
+    opacity:1 !important;
+  }
+
+}
