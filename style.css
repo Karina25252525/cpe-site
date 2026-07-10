@@ -1144,3 +1144,14 @@ body.modal-open{overflow:hidden}
     line-height:1.55 !important;
   }
 }
+/* Лёгкое размытие превью проектов */
+
+.project-card img {
+    filter: blur(1.5px);
+    transform: scale(1.02);
+    transition: .3s ease;
+}
+
+.project-card:hover img {
+    filter: blur(0);
+}
